@@ -6,6 +6,8 @@
         <title>Document</title>
         <meta name="viewport" content="width=device-width,initial-scle=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="aos.css">
+        <link rel="stylesheet" href="splitting.css">
         <link rel="stylesheet" href="all.min.css">
     </head>
     <body>
@@ -13,13 +15,13 @@
             <!--header-->
             <header class="header">
                 <div class="header-container container">
-                    <a href="#" class="header-logo">
+                    <a href="#" class="header-logo" data-aos="fade-down">
                         <span>even</span>
                         tos
                     </a>
                     <button type="button" class="header-toggler js-header-toggler"></button>
                     <nav class="header-menu js-header-menu">
-                        <ul>
+                        <ul data-aos="fade-down">
                             <li>
                                 <a href="#home">home</a>
                             </li>
@@ -48,34 +50,47 @@
                     <div class="home-left">
                         <h1 class="home-title">music fest 2024</h1>
                         <p class="home-sub-title">
-                            <span>
+                            <span data-aos="fade-up">
                                 <i class="fa fa fa-calendar-alt"></i>
                                 15-16 January
                             </span>
-                            <span>
+                            <span data-aos="fade-up" data-aos-delay="300">
                                 <i class="fa fa-map-marker-alt"></i>
                                 Sarita Vihar,
-                                        New Delhi
+New Delhi
                             </span>
                         </p>
-                        <div class="home-btn">
+                        <div class="home-btn" data-aos="fade-up" data-aos-delay="600">
                             <a href="#pricing" class="btn">Buy tickets</a>
                         </div>
                     </div>
                     <div class="home-right">
                         <div class="home-box">
-                            <div class="home-decor"></div>
+                            <div class="home-decor" data-aos="reveal-left"></div>
                             <div class="home-img-box1">
-                                <img src="imag/home-1.jpg" alt="1">
+                                <img
+                                    src="imag/home-1.jpg"
+                                    alt="1"
+                                    data-aos="reveal-left"
+                                    data-aos-delay="400"
+                                >
                             </div>
-                            <div class="home-img-box2" alt="2">
-                                <img src="imag/home-2.jpg">
+                            <div class="home-img-box2">
+                                <img
+                                    src="imag/home-2.jpg"
+                                    alt="2"
+                                    data-aos="reveal-left"
+                                    data-aos-delay="400"
+                                >
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- about section -->
+            <!--
+                            about
+                            section
+                            -->
             <section class="about" id="about">
                 <div class="conatiner">
                     <div class="about-content">
@@ -89,19 +104,17 @@
                         </div>
                         <div class="about-text">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam libero
-                                            obcaecati laborum repudiandae harum minus autem provident quas aliquam?
-                                            Facere,
-                                            et? Nemo dolorem accusantium non illo. Animi iure tempore hic.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam libero obcaecati laborum repudiandae harum minus autem provident quas aliquam? Facere,
+et? Nemo dolorem accusantium non illo. Animi iure tempore hic.
                             </p>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur,
-                                            adipisicing elit. Odio exercitationem qui voluptatibus omnis,
-                                            sequi adipisci sit nulla magni ab tempora.
+adipisicing elit. Odio exercitationem qui voluptatibus omnis,
+sequi adipisci sit nulla magni ab tempora.
                             </p>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur,
-                                            adipisicing elit. Eligendi ipsam ullam tenetur vitae maxime ! Recusandae !
+adipisicing elit. Eligendi ipsam ullam tenetur vitae maxime ! Recusandae !
                             </p>
                             <div class="about-btn">
                                 <a href="#pricing" class="btn">Buy Tickets</a>
@@ -110,7 +123,10 @@
                     </div>
                 </div>
             </section>
-            <!-- performance section -->
+            <!--
+                                performance
+                                section
+                                -->
             <section class="performers" id="performers">
                 <div class="container">
                     <div class="section-header">
@@ -148,16 +164,14 @@
             <section class="schedule" id="schedule">
                 <div class="container">
                     <div class="section-header">
-                        <h2 class="section-header-title">
-                            Event Schedule
-                        </h2>
+                        <h2 class="section-header-title">Event Schedule</h2>
                     </div>
                     <div class="schedule-tabs">
                         <button type="button" data-target="#day-1" class="schedule-tab active js-schedule-tab">
                             day 1
                             <span>15-01-2024</span>
                         </button>
-                        <button type="button" data-target="#day-2" class="schedule-tab active js-schedule-tab">
+                        <button type="button" data-target="#day-2" class="schedule-tab notactive js-schedule-tab">
                             day 2
                             <span>16-01-2024</span>
                         </button>
@@ -231,9 +245,7 @@
             <section class="sponser" id="sponser">
                 <div class="container">
                     <div class="section-header">
-                        <h2 class="section-header-title" style="margin-bottom:50px;">
-                            Event Sponsers
-                        </h2>
+                        <h2 class="section-header-title" style="margin-bottom:50px;">Event Sponsers</h2>
                     </div>
                     <div class="sponsers-items">
                         <div class="sponser-item">
@@ -263,7 +275,7 @@
                     </div>
                 </div>
             </section>
-            <!-- pricing section -->
+            <!--pricingsection -->
             <section class="pricing" id="pricing">
                 <div class="container">
                     <div class="section-header">
@@ -276,7 +288,7 @@
                                 <h3 class="title">Basic</h3>
                                 <ul>
                                     <li>
-                                        <i class="fa fa-check">Lorem ipsum dolor sit.</i>
+                                        <i class="fa  fa-check">Lorem ipsum dolor sit.</i>
                                     </li>
                                     <li>
                                         <i class="fa fa-check">Lorem ipsum dolor sit.</i>
@@ -311,7 +323,99 @@
                     </div>
                 </div>
             </section>
+            <!--contact section-->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-header-title" style=" margin-bottom:50px;">Contact Us</h2>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="black" d="M16 11V8h-3V7h3V4h1v3h3v1h-3v3zm2.93 9q-2.528 0-5.184-1.266t-4.944-3.555q-2.27-2.288-3.536-4.935T4 5.07q0-.45.3-.76T5.05 4h2.473q.408 0 .712.257t.411.659L9.142 7.3q.07.42-.025.733t-.333.513L6.59 10.592q.616 1.117 1.361 2.076t1.59 1.817q.87.87 1.874 1.62q1.004.749 2.204 1.414l2.139-2.177q.244-.263.549-.347q.304-.083.674-.033l2.103.43q.408.1.662.411t.254.712v2.435q0 .45-.31.75t-.76.3"/>
+                                </svg>
+                                <div class="text">
+                                    <h3>Call us</h3>
+                                    <p>9654 293 ***</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M19 8.27q-1.038 0-1.77-.731t-.73-1.77T17.23 4T19 3.27t1.77.73t.73 1.77t-.73 1.769t-1.77.73M4.616 19q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h9.947q-.043.25-.053.49q-.009.24.014.51q.04.762.316 1.44q.274.677.734 1.221L12 11L4.308 6L4 6.885l8 5.23l4.314-2.819q.54.458 1.225.716q.684.257 1.461.257q.512 0 1.027-.125T21 9.77v7.616q0 .69-.462 1.152T19.385 19z"/>
+                                </svg>
+                                <div class="text">
+                                    <h3>Email us</h3>
+                                    <p>qwerty123@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="margin-top: 4px;">
+                                    <path fill="black" d="M11.5 13.5h1v-3h3v-1h-3v-3h-1v3h-3v1h3zm.5 7.52q-3.525-3.118-5.31-5.815q-1.786-2.697-1.786-4.909q0-3.173 2.066-5.234Q9.037 3 12 3t5.03 2.062q2.066 2.061 2.066 5.234q0 2.212-1.785 4.909q-1.786 2.697-5.311 5.814"/>
+                                </svg>
+                                <div class="text">
+                                    <h3>Reach us</h3>
+                                    <p>
+                                        Sarita Vihar,
+New Delhi
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="contact-form">
+                            <div class="col-2">
+                                <div class="input-box">
+                                    <input type="text" placeholder=" Name" class="input">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Email" class="input">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Subject" class="input">
+                                </div>
+                                <div class="input-box">
+                                    <textarea placeholder="Message" class="input input-message"></textarea>
+                                </div>
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--footer section-->
+            <footer class="footer">
+                <div class="footer-container conatiner">
+                    <div class="footer-social">
+                        <a href="#">
+                            <img
+                                src="imag/logo-facebook.svg"
+                                width="20px"
+                                height="20px"
+                                currentColor="red"
+                            >
+                        </a>
+                        <a href="#">
+                            <img src="imag/logo-tiktok.svg" width="20px" height="20px">
+                        </a>
+                        <a href="#">
+                            <img src="imag/logo-instagram.svg" width="20px" height="20px">
+                        </a>
+                        <a href="#">
+                            <img src="imag/logo-linkedin.svg" width="20px" height="20px">
+                        </a>
+                        <a href="#">
+                            <img src="imag/logo-youtube.svg" width="20px" height="20px">
+                        </a>
+                    </div>
+                    <div class="footer-copyright">
+                        &copy;
+2024 Eventos. All Rights Reserved.
+                    </div>
+                </div>
+            </footer>
         </div>
+        <script src="splitting.min.js"></script>
+        <script src="aos.js"></script>
         <script src="java.js"></script>
     </body>
 </html>

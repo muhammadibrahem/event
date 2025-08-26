@@ -1,3 +1,49 @@
+
+window.addEventListener("load", () => {
+    //initialize AOS
+    AOS.init({
+        duration: 1200,
+        easing: 'ease-in-out-back',
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// header menu
+function headerMenu() {
+    const toggler = document.querySelector(".js-header-toggler");
+    const menu = document.querySelector(".js-header-menu");
+    const items = menu.querySelectorAll("li");
+
+    const menuToggle = () => {
+        menu.classList.toggle("open");
+        toggler.classList.toggle("active");
+    }
+    toggler.addEventListener("click", menuToggle);
+    items.forEach((item) => {
+        item.querySelector("a").addEventListener("click",
+            () => {
+                if (window.innerWidth <= 991) {
+                    menuToggle();
+                }
+            }
+        );
+    });
+
+}
+headerMenu();
 // schedule table 
 function scheduleTabs() {
     const tabs = document.querySelectorAll(".js-schedule-tab");
