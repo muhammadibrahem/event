@@ -175,6 +175,42 @@ button {
     clip-path: inset(0);
 }
 
+/* text animation */
+.word {
+
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.word .char:nth-child(1) {
+    text-transform: uppercase;
+}
+
+[data-aos="text-animation"] .char {
+    transition: transform 1.2s cubic-bezier(.455, .03, .515, .955);
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -webkit-transition: transform 1.2s cubic-bezier(.455, .03, .515, .955);
+    -moz-transition: transform 1.2s cubic-bezier(.455, .03, .515, .955);
+    -ms-transition: transform 1.2s cubic-bezier(.455, .03, .515, .955);
+    -o-transition: transform 1.2s cubic-bezier(.455, .03, .515, .955);
+
+}
+
+[data-aos="text-animation"].aos-animate .char {
+
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transition-delay: calc(0.05s * var(--char-index));
+
+}
+
 /* btn */
 .btn {
     display: inline-block;
