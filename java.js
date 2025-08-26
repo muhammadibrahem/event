@@ -61,3 +61,6 @@ function scheduleTabs() {
         })
     });
 }
+scheduleTabs();
+// splitting
+Splitting();
